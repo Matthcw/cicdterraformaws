@@ -7,6 +7,7 @@ import (
 	"testing"
 )
 
+// comment 1
 func TestHelloHandler(t *testing.T) {
 	// Create a request to pass to our handler
 	req, err := http.NewRequest("GET", "/hello", nil)
