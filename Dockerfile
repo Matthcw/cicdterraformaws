@@ -7,6 +7,7 @@ WORKDIR /app
 # Copy the current directory contents into the container
 COPY . .
 
+RUN apk add --no-cache gcc musl-dev
 # Build the Go app
 RUN go build -o main .
 
