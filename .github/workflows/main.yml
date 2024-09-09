@@ -6,11 +6,11 @@ on:
       - master
   workflow_dispatch:   # Allows for manual triggering
       inputs:
-      action:
-        description: 'Choose action: apply or destroy'
-        required: true
-        default: 'apply'
-        type: string
+        action:
+          description: 'Choose action: apply or destroy'
+          required: true
+          default: 'apply'
+          type: string
 
 jobs:
   build:
