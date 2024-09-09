@@ -28,6 +28,9 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
+    - name: Change directory to infra
+      run: cd infra
+
     - name: Install Terraform
       uses: hashicorp/setup-terraform@v2
 
@@ -46,6 +49,9 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
+
+    - name: Change directory to infra
+      run: cd infra
 
     - name: Install Terraform
       uses: hashicorp/setup-terraform@v2
